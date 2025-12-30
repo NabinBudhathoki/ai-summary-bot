@@ -2,7 +2,7 @@ import express from "express";
 import cors from "cors";
 import helmet from "helmet";
 import { config } from "./config";
-import summaryRoutes from "./routes/summary.routes";
+import summaryLangChainRoutes from "./routes/summary.langchain.routes";
 
 const app = express();
 
@@ -67,8 +67,8 @@ app.get("/api/health", (req, res) => {
   });
 });
 
-// API Routes
-app.use("/api/v1/summary", summaryRoutes);
+// API Routes (using LangChain with RAG support)
+app.use("/api/v1/summary", summaryLangChainRoutes);
 
 // Global error handler
 app.use(

@@ -22,6 +22,8 @@
   "author": "Your Name",
   "license": "MIT",
   "dependencies": {
+    "@langchain/community": "^0.0.10",
+    "@langchain/openai": "^0.0.13",
     "@types/cheerio": "^0.22.35",
     "axios": "^1.12.2",
     "cheerio": "^1.1.2",
@@ -29,6 +31,7 @@
     "dotenv": "^16.3.1",
     "express": "^4.18.2",
     "helmet": "^7.0.0",
+    "langchain": "^0.0.207",
     "openai": "^4.20.1"
   },
   "devDependencies": {
